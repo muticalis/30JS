@@ -73,3 +73,55 @@ let surname = 'Çalış'
 let fullName = who + space + surname; //concatenation
 
 console.log(fullName) // Muti Çalış
+
+
+//Template Literals 
+
+let a = 3
+let b = 4
+
+console.log(`The sum of ${a} and ${b} is ${a + b}`)
+
+
+let m = 2
+let n = 3
+console.log(`${m} is greater than ${n}: ${m > n}`)
+
+
+//String Methods
+
+let city = 'Istanbul'
+console.log(city.length) //8
+
+
+let strings1 = 'Python'
+console.log(strings1.toUpperCase()) //PYTHON
+
+let strings2 = 'JavasCript'
+console.log(strings2.toLowerCase()) //javascript
+
+let country = 'Turkey'
+console.log(country.substr(3, 4)) //key
+
+let language = 'English'
+console.log(language.substring(2,3))//g
+
+let random = '30 days of Javascript'
+console.log(random.split(' ')) //['30', 'days', 'of', 'Javascript']
+
+let string3 = '   30 Days Of JavaScript   '
+console.log(string3) //       30 Days Of JavaScript 
+console.log(string3.trim(' '))//30 Days Of JavaScript 
+
+
+let string4= '30 Days Of JavaScript'
+console.log(string4.includes(30)) //true
+
+let country2 = 'Finland'
+console.log(country2.replace('Fin', 'Noman'))//Nomanland
+
+let string5 = '30 Days Of JavaScript'
+console.log(string5.indexOf('D'))// 3
+
+let string6 = '30'
+console.log(string6.concat("Days", "Of", "JavaScript")) //30DaysOfJavaScript
