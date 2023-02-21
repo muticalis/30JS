@@ -125,3 +125,53 @@ console.log(string5.indexOf('D'))// 3
 
 let string6 = '30'
 console.log(string6.concat("Days", "Of", "JavaScript")) //30DaysOfJavaScript
+
+
+
+let string7 = 'Love is the best to in this world'
+console.log(string7.startsWith('Love'))// true
+
+
+let string8 = 'Love is the most powerful feeling in the world'
+console.log(string8.endsWith('world')) //true
+
+
+let again = 'pain'
+console.log(again.repeat(10)) //painpainpainpainpainpainpainpainpainpain
+
+
+//Changing Data Type (Casting)
+  
+
+let firstName = 'Muti'      // string
+let lastName = 'Çalış'        // string
+let country1 = 'Turkey'         // string
+let city1 = 'Istanbul'           // string
+let age1 = 21                  // number, it is not my real age, do not worry about it
+let job                         // undefined, because a value was not assigned
+
+console.log(typeof 'Muti')  // string
+console.log(typeof firstName)   // string
+console.log(typeof 10)          // number
+console.log(typeof 3.14)        // number
+console.log(typeof true)        // boolean
+console.log(typeof false)       // boolean
+console.log(typeof NaN)         // number
+console.log(typeof job)         // undefined
+console.log(typeof undefined)   // undefined
+console.log(typeof null)        // object
+
+
+
+
+//String to Int
+
+   let example = '10'
+   let exampleInt = parseInt(example)
+   console.log(exampleInt) //10
+
+   //String to Float
+
+let num = '9.81'
+let numFloat = parseFloat(num)
+console.log(numFloat) // 9.81
