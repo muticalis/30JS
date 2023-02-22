@@ -70,3 +70,36 @@ let check7 = !(4 > 3) //false
 
 
 //Increment Operator
+let count = 0
+console.log(++count)//1
+console.log(count++)//1
+
+//Ternary Operators
+let number = 5
+number > 0
+  ? console.log(`${number} is a positive number`)
+  : console.log(`${number} is a negative number`)
+
+  //Date Object
+const now1 = new Date()
+console.log(now1.getFullYear()) // 2023
+
+const now2 = new Date()
+console.log(now2.getMonth()) // 1 becouse 0-11
+
+const now3= new Date()
+console.log(now3.getDate()) //22
+
+const now4 = new Date()
+console.log(now4.getDay()) //3
+
+const now5 = new Date()
+console.log(now5.getHours()) //14
+
+const now6 = new Date() //
+console.log(now6.getTime()) //1677066229219
+
+const allSeconds = Date.now() //
+console.log(allSeconds) // 1677066229219, this is the number of seconds passed from January 1.
+const timeInSeconds = new Date().getTime()
+console.log(allSeconds == timeInSeconds) // true
