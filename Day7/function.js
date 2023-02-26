@@ -58,3 +58,48 @@ function square(number) {
   const numbers = [1, 2, 3, 4, 5];
       //calling a function
   console.log(sumArrayValues(numbers)); //15
+
+
+
+  function sumAllNums () {
+    let sum = 0
+    for (let i = 0; i<arguments.length; i++) {
+      sum += arguments[i]
+    }
+     return sum 
+  }
+  console.log(sumAllNums(10, 20, 13, 40, 10))  // 93
+
+  const sumAllNums = (...args) => {
+    let sum = 0
+    for (const element of args) {
+      sum += element
+    }
+    return sum
+  }
+  
+  console.log(sumAllNums(1, 2, 3, 4)) // 10
+
+
+const square = function(n) {
+  return n*n
+}
+console.log(square(5)) //25
+
+
+const changeToUpperCase = arr => {
+  const newArr = []
+  for (const element of arr) {
+    newArr.push(element.toUpperCase())
+  }
+  return newArr
+}
+
+const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+console.log(changeToUpperCase(countries))
+
+// ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
+
+const printFullName = (firstName, lastName) => `${firstName} ${lastName}`
+
+console.log(printFullName('Muti', 'Çalış'))
