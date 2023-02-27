@@ -56,7 +56,24 @@ const person = {
    }
 }
 
+//person.name = 'Ahmet' //AhmetÇaliş
+person.skills.push('React')
+
+
 console.log(person.getFullName()) //MutiÇaliş
+console.log(person)
+
+
+let newPerson = Object.assign({},person)
+newPerson.name = 'Murat'
+console.log(Object.keys(person))
+console.log(person.hasOwnProperty('name')) //true. (checking)
+
+
+
+
+
+
 
 
 
