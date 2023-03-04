@@ -21,3 +21,12 @@ I recommend python for a first programming language'
 
 matchReplaced = txt.replace(/python/gi, 'JavaScript')
 console.log(matchReplaced) //JavaScript is the most beautiful language that a human begin has ever created.I recommend python for a first programming language
+
+
+
+let name = '1Mustafa'
+
+console.log(
+    /^[a-z]$/.test(name) //false
+)
+
